@@ -7,7 +7,7 @@
 def index():
     response.files.append(URL('static','css/app/where.css'))
     response.files.append(URL('static','css/leaflet.css'))
-    response.files.append(URL('static','js/leaflet.js'))
+    response.files.append(URL('static','js/leaflet/leaflet.js'))
     return dict()
 
 def user():

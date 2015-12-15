@@ -6,3 +6,11 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     id: mbid,
     accessToken: mbtk
 }).addTo(map);
+
+var marker = L.marker([49.14, 13.548]).addTo(map);
+
+var circle = L.circle([49.14, 13.5], 500, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(map);
